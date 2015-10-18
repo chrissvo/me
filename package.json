@@ -1,7 +1,7 @@
 {
   "name": "me",
   "version": "0.0.0",
-  "description": "Small description for me goes here",
+  "description": "Me is about me",
   "private": true,
   "directories": {
     "doc": "doc",
