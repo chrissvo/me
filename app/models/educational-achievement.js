@@ -6,6 +6,7 @@ export default DS.Model.extend({
   image: DS.attr('string'),
   description: DS.attr('string'),
   organization: DS.attr('string'),
+  location: DS.attr('string'),
   from: DS.attr('string'),
   to: DS.attr('string'),
 
