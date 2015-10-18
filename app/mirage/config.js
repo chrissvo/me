@@ -7,6 +7,20 @@ export default function() {
     };
   });
 
+  this.get('/educational-achievements', function(db, request) {
+    return {
+      data: db['educational-achievements'].map(attrs => (
+        {type: 'educational-achievement', id: attrs.id, attributes: attrs }))
+    };
+  });
+
+  this.get('/extracurricular-activities', function(db, request) {
+    return {
+      data: db['extracurricular-activities'].map(attrs => (
+        {type: 'extracurricular-activity', id: attrs.id, attributes: attrs }))
+    };
+  });
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
