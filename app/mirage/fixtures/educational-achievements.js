@@ -5,7 +5,7 @@ export default [
     title: 'Postgraduate Certificate in International Business',
     image: '',
     description: 'Courses: Organizational Behavior, Managerial Accounting & Finance, Global Business',
-    organization: 'Mountbatten Institute (New York Program), St. Mary&quot;s University',
+    organization: 'Mountbatten Institute (New York Program), St. Mary\'s University',
     location: 'London, United Kingdom',
     from: 'March 2014',
     to: 'March 2015'
