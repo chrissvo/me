@@ -1,1 +1,6 @@
-{{outlet}}
+<div class="resume">
+  Hello
+  {{#each model as |workExperience|}}
+    {{workExperience.title}}
+  {{/each}}
+</div>
