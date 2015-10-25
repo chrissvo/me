@@ -1,0 +1,19 @@
+// resume-section
+
+.resume-section {
+  padding: 5%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  .image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    flex: none;
+  }
+  .text {
+    width: 75%;
+  }
+}
