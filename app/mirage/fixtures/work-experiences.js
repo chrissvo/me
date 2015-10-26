@@ -3,7 +3,7 @@ export default [
   {
     id: 1,
     title: 'Front End Developer',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/mgmco.png',
     description: 'Development, data analysis, and optimization of white-label referral marketing solutions',
     organization: 'Member Get Member Company',
     location: 'Amsterdam, Netherlands',
@@ -13,7 +13,7 @@ export default [
   {
     id: 2,
     title: 'Information Risk Analyst',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/jpmorgan.png',
     description: 'Audit remediation, automation, and project management',
     organization: 'JPMorgan Chase & Co.',
     location: 'New York, United States',
@@ -23,7 +23,7 @@ export default [
   {
     id: 3,
     title: 'Founding partner',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/eerstelinks.png',
     description: 'Product development, marketing, strategy, HR, and administration',
     organization: 'eerstelinks.nl',
     location: 'Amsterdam, Netherlands',
@@ -33,7 +33,7 @@ export default [
   {
     id: 4,
     title: 'Freelance consultant',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/saman.png',
     description: 'Excel modeling, web development, and online marketing',
     organization: 'SAMAN Groep',
     location: 'Zierikzee, Netherlands',
@@ -43,7 +43,7 @@ export default [
   {
     id: 5,
     title: 'Business Consultant and Data Scientist',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/ect.png',
     description: 'Data analysis, reporting, and IT project management',
     organization: 'Europe Container Terminals',
     location: 'Rotterdam (Maasvlakte), Netherlands',
@@ -53,7 +53,7 @@ export default [
   {
     id: 6,
     title: 'Business Development Intern',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/ect.png',
     description: 'Implementation of a cross-country CRM solution',
     organization: 'Europe Container Terminals',
     location: 'Rotterdam (Maasvlakte), Netherlands',

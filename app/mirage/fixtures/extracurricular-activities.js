@@ -3,7 +3,7 @@ export default [
   {
     id: 1,
     title: 'Marketing Intern',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/bestcasescenario.png',
     description: 'Managing CRM database, producting marketing reports, and representation to customers',
     organization: 'Best Case Scenario',
     location: 'Sydney, Australia',
@@ -13,7 +13,7 @@ export default [
   {
     id: 2,
     title: 'Independent Researcher',
-    image: '',
+    image: 'https://christian.surf/assets/img/logo/ucr.png',
     description: 'Independent academic research, SPSS analysis, and communication with clients',
     organization: 'Institute for Undergraduate Research Eleanor',
     location: 'Middelburg, Netherlands',
