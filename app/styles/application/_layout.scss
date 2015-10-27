@@ -1,6 +1,22 @@
 // application layout
 
 body {
-  background-color: $light-grey;
+  background-image: url('https://christian.surf/assets/img/background/christian.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
+  .introduction {
+    padding: 20px;
+    margin: 20px;
+    .btn {
+      display: block;
+      background-color: red;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 5px;
+      max-width: 300px;
+    }
+  }
 }
