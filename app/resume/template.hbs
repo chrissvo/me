@@ -1,1 +1,14 @@
-{{outlet}}
+<div class="resume">
+  <h1>Work experience:</h1>
+  {{#each model.workExperiences as |workExperience|}}
+    {{resume-section section=workExperience}}
+  {{/each}}
+  <h1>Education:</h1>
+  {{#each model.educationalAchievements as |educationalAchievement|}}
+    {{resume-section section=educationalAchievement}}
+  {{/each}}
+  <h1>Extracurricular:</h1>
+  {{#each model.extracurricularActivities as |extraCurricularActivity|}}
+    {{resume-section section=extraCurricularActivity}}
+  {{/each}}
+</div>
