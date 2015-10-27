@@ -1,23 +1,9 @@
 export default function() {
 
-  this.get('/work-experiences', function(db, request) {
+  this.get('/resume-sections', function(db, request) {
     return {
-      data: db['work-experiences'].map(attrs => (
-        {type: 'work-experience', id: attrs.id, attributes: attrs }))
-    };
-  });
-
-  this.get('/educational-achievements', function(db, request) {
-    return {
-      data: db['educational-achievements'].map(attrs => (
-        {type: 'educational-achievement', id: attrs.id, attributes: attrs }))
-    };
-  });
-
-  this.get('/extracurricular-activities', function(db, request) {
-    return {
-      data: db['extracurricular-activities'].map(attrs => (
-        {type: 'extracurricular-activity', id: attrs.id, attributes: attrs }))
+      data: db['resume-sections'].map(attrs => (
+        {type: 'resume-section', id: attrs.id, attributes: attrs }))
     };
   });
 
