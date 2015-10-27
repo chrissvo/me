@@ -1,33 +1,34 @@
 // index layout
 
-body {
+.index-wrapper {
+  height: 100%;
+  width: 100%;
   background-image: url('https://christian.surf/assets/images/backgrounds/christian.jpg');
-}
-
-.introduction {
-  padding: 20px;
-  margin: 20px;
-  max-width: 50%;
-  @media (max-width: 320px) {
-    width: 50%;
-    background-color: rgba(1,1,1,0.1);
-  }
-  .btn {
-    display: block;
-    background-color: #FF0000;
-    color: #000000;
-    line-height: 40px;
-    text-align: center;
-    margin-bottom: 10px;
-    max-width: 300px;
-    border-radius: 3px;
-    cursor: pointer;
-    text-decoration: none;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      background-color: lighten(#FF0000, 50%);
+  .introduction {
+    padding: 20px;
+    margin: 20px;
+    max-width: 50%;
+    @media (max-width: 320px) {
+      width: 50%;
+      background-color: rgba(1,1,1,0.1);
+    }
+    .btn {
+      display: block;
+      background-color: #FF0000;
+      color: #000000;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 10px;
+      max-width: 300px;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background-color: lighten(#FF0000, 50%);
+      }
     }
   }
 }
