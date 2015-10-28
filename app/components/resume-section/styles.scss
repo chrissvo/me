@@ -1,19 +1,48 @@
 // resume-section
 
 .resume-section {
-  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
   align-items: center;
   display: flex;
   flex-direction: row;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: relative;
+  margin-bottom: 40px;
+  .time {
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 15px;
+    width: 150px;
+  }
+  .from {
+    color: #FFFFFF;
+    background-color: #7D7D7D;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 10px;
+  }
+  .to {
+    color: #7D7D7D;
+    background-color: #FFFFFF;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 10px;
+  }
   .image {
     width: 150px;
     height: 150px;
     background-size: cover;
     background-position: center;
+    background-color: #FFFFFF;
     border-radius: 50%;
     flex: none;
+    margin-bottom: 40px;
   }
   .text {
+    padding-left: 20px;
     width: 75%;
   }
 }
