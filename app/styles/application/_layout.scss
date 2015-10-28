@@ -8,4 +8,22 @@ body {
     background-size: cover;
     margin: 0;
   }
+  .btn {
+    display: block;
+    background-color: #FF0000;
+    color: #000000;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 300px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: lighten(#FF0000, 50%);
+    }
+  }
 }
