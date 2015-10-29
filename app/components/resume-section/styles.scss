@@ -31,11 +31,14 @@
     }
     .from {
       right: 0;
-      bottom: 0;
+      bottom: -20px;
       border-top-left-radius: 10px;
     }
-    .to {
+    &.first .to {
       top: 0;
+    }
+    .to {
+      top: -20px;
       left: 0;
       border-bottom-right-radius: 10px;
     }
@@ -48,12 +51,12 @@
     }
     .from {
       left: 0;
-      bottom: 0;
+      bottom: -20px;
       border-top-right-radius: 10px;
     }
     .to {
       right: 0;
-      top: 0;
+      top: -20px;
       border-bottom-left-radius: 10px;
     }
   }
