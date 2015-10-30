@@ -57,6 +57,9 @@
       bottom: -20px;
       border-top-right-radius: 10px;
     }
+    &.first .to {
+      top: 0;
+    }
     .to {
       right: 0;
       top: -20px;
