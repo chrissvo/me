@@ -5,7 +5,13 @@
   </div>
   <div class="resume">
     {{#each model.resumeSections as |resumeSection|}}
-      {{resume-section section=resumeSection}}
+      {{#if (eq model.resumeSections.firstObject.id resumeSection.id)}}
+        {{resume-section section=resumeSection order='first'}}
+      {{else if (eq model.resumeSections.lastObject.id resumeSection.id)}}
+        {{resume-section section=resumeSection order='last'}}
+      {{else}}
+        {{resume-section section=resumeSection order='middle'}}
+      {{/if}}
     {{/each}}
   </div>
 </div>

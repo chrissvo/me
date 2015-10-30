@@ -29,6 +29,9 @@
     .image {
       margin-top: 40px;
     }
+    &.last .from {
+      bottom: 0;
+    }
     .from {
       right: 0;
       bottom: -20px;
