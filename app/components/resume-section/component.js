@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         const windowTop = 0;
         const headerTop = header.offset().top ;
         const resumeTop = resume.offset().top;
-        const headerBottom = headerTop + header.height() + 40;
+        const headerBottom = headerTop + header.height();
         const resumeBottom = resumeTop + resume.height();
 
         const sectionId = Number($(this).attr('id'));
@@ -21,11 +21,11 @@ export default Ember.Component.extend({
 
         if (headerBottom  >= resumeTop && windowTop < resumeBottom) {
           $('#' + nextSectionId).addClass('first');
+          $('#' + nextSectionId).removeClass('middle');
           return $(this).css('opacity', 0);
         }
-        if (previousSectionId !== 1) {
-          $('#' + nextSectionId).removeClass('first');
-        }
+        $('#' + nextSectionId).removeClass('first');
+        $('#' + nextSectionId).addClass('middle');
         return $(this).css('opacity', 1);
       });
     });
