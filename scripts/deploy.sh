@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# deploy script for solarcalculation
+# deploy script for me
 
 set -e            # fail fast
 set -o pipefail   # don't ignore exit codes when piping output
@@ -15,15 +15,15 @@ ember build --environment=production --output-path dist/ --watch false
 date=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
 deployed_branch=`git symbolic-ref --short -q HEAD`
 last_commit_hash=`git rev-parse --verify HEAD`
-last_commit_url="https://github.com/chrissvo/solarcalculation/commit/$last_commit_hash"
+last_commit_url="https://github.com/chrissvo/me/commit/$last_commit_hash"
 echo -e "{\"date\":\""$date"\", \"developer\":\""`whoami`"\", \"environment\":\""$environment"\", \"branch\":\""$deployed_branch"\", \"commit\":\""$last_commit_hash"\", \"github_url\":\""$last_commit_url"\"}" > dist/build.json
 
-current_version=`npm version | grep solarcalculation | cut -f2 -d"'"`
+current_version=`npm version | grep me | cut -f2 -d"'"`
 
 if [ -z "$current_version" ]; then
   error "Something went wrong while detecting the current version"
 else
-	echo -e "\nSolarcalculation is currently on version: ${CYA}$current_version${RES}"
+	echo -e "\nMe is currently on version: ${CYA}$current_version${RES}"
 fi
 
 read -p "Do you wish to version bump? " -r
@@ -64,7 +64,7 @@ if [ "$REPLY" = "major" ] || [ "$REPLY" = "minor" ] || [ "$REPLY" = "patch" ]; t
   # push release to GitHub
   git push origin develop master
 
-  info "Solarcalculation is pushed to GitHub as version ${BLU}$new_version${RES}"
+  info "Me is pushed to GitHub as version ${BLU}$new_version${RES}"
 
 fi
 
