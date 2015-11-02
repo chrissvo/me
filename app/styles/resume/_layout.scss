@@ -4,18 +4,27 @@
   background-image: url('https://christian.surf/assets/images/backgrounds/redshoes.jpg');
   overflow: hidden;
   .resume-header {
-    position: fixed;
     background-color: rgba(255, 255, 255, 0.5);
     margin-bottom: 40px;
     margin-top: 5%;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    &.is-desktop {
+      position: fixed;
+      .resume-header-content {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    &.is-phone {
+      .resume-header-content {
+        text-align: center;
+      }
+    }
     .resume-header-content {
       padding: 20px;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
       .image {
         width: 150px;
         height: 150px;

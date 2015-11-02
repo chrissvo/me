@@ -1,6 +1,10 @@
-<div id={{section.id}} class="resume-section {{if (even section.id) 'right' 'left'}} {{order}}">
-  <div class="from time">{{section.from}}</div>
-  <div class="to time">{{section.to}}</div>
+<div id={{section.id}} class="resume-section {{if (even section.id) 'right' 'left'}} {{order}} {{if isPhone 'is-phone' 'is-desktop'}}">
+  {{#if isPhone}}
+    <div class="from time">{{section.to}}</div>
+  {{else}}
+    <div class="from time">{{section.from}}</div>
+    <div class="to time">{{section.to}}</div>
+  {{/if}}
   <img class="image" src={{section.image}} />
   <div class="text">
     <h3>{{section.title}}</h3>
@@ -8,4 +12,7 @@
     <p><a class="url" href={{section.url}} target="_blank">{{section.organization}}</a></p>
     <p><a class="url" href="https://google.com/maps/search/{{section.location}}" target="_blank">{{section.location}}</a></p>
   </div>
+  {{#if isPhone}}
+    <div class="to time">{{section.from}}</div>
+  {{/if}}
 </div>
