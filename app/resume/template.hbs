@@ -1,7 +1,15 @@
 <div class="resume-wrapper background">
   <div class="resume-header">
-    <h1>So, this is a more or less chronological list of my professional achievements, kind of like a resume. Feel free to read it, but if you really want to get to know me, we should probably meet up!</h1>
-    <a class="btn">Get in touch</a>
+    <div class="resume-header-content">
+      {{#link-to 'index'}}
+        <img class="image" src="https://christian.surf/assets/images/profiles/christian.png" />
+      {{/link-to}}
+      <div class="text">
+        <h3>Christian van Ommeren</h3>
+        <p>Thank you for reading my resume. Interested?</p>
+        <a class="btn">Get in touch</a>
+      </div>
+    </div>
   </div>
   <div class="resume">
     {{#each model.resumeSections as |resumeSection|}}

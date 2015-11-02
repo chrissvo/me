@@ -6,17 +6,35 @@
   .resume-header {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
     margin-bottom: 40px;
+    margin-top: 5%;
+    width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    .resume-header-content {
+      padding: 20px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      .image {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        flex: none;
+      }
+      .text {
+        padding-left: 20px;
+      }
+    }
   }
   .resume {
     overflow: scroll;
     width: 80%;
+    margin-top: 30%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 30%;
   }
 }
