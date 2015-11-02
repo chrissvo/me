@@ -1,0 +1,25 @@
+<div class="resume-wrapper background">
+  <div class="resume-header {{if isPhone 'is-phone' 'is-desktop'}}">
+    <div class="resume-header-content">
+      {{#link-to 'index'}}
+        <img class="image" src="https://christian.surf/assets/images/profiles/christian.png" />
+      {{/link-to}}
+      <div class="text">
+        <h3>Christian van Ommeren</h3>
+        <p>Thank you for reading my resume. Interested?</p>
+        {{#link-to 'contact' class="btn"}}Get in touch{{/link-to}}
+      </div>
+    </div>
+  </div>
+  <div class="resume">
+    {{#each model.resumeSections as |resumeSection|}}
+      {{#if (eq model.resumeSections.firstObject.id resumeSection.id)}}
+        {{resume-section section=resumeSection order='first' isPhone=isPhone}}
+      {{else if (eq model.resumeSections.lastObject.id resumeSection.id)}}
+        {{resume-section section=resumeSection order='last' isPhone=isPhone}}
+      {{else}}
+        {{resume-section section=resumeSection order='middle' isPhone=isPhone}}
+      {{/if}}
+    {{/each}}
+  </div>
+</div>

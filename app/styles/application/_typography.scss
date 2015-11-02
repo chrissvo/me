@@ -1,0 +1,9 @@
+// application typography
+
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.4.0/fonts';
+@import 'bower_components/font-awesome/scss/font-awesome';
+@import url('http://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
+
+body {
+  font-family: 'Roboto';
+}

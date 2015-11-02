@@ -1,0 +1,11 @@
+@mixin columns($amount, $margin:1%) {
+  @include clearfix;
+  float: left;
+  margin-left: $margin;
+  margin-right: $margin;
+  width: 100% / $amount - $margin * 2;
+  html.is-phone & {
+    width: 100% / max(1, $amount / 2) - $margin * 2;
+  }
+}
+
