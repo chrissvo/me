@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         const windowTop = 0;
         const headerTop = header.offset().top ;
         const resumeTop = resume.offset().top;
-        const headerBottom = headerTop + header.height();
+        const headerBottom = headerTop + header.height() + 40;
         const resumeBottom = resumeTop + resume.height();
 
         const sectionId = Number($(this).attr('id'));
