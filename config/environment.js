@@ -7,7 +7,7 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-      'font-src': "'self' fonts.gstatic.com",
+      'font-src': "'self' fonts.gstatic.com netdna.bootstrapcdn.com",
       'style-src': "'self' fonts.googleapis.com",
       'img-src': "'self' christian.surf"
     },
