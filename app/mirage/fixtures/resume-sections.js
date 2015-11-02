@@ -7,6 +7,7 @@ export default [
     description: 'Development, data analysis, and optimization of white-label referral marketing solutions',
     organization: 'Member Get Member Company',
     location: 'Amsterdam, Netherlands',
+    url: 'http://membergetmember.co',
     from: 'May 2015',
     to: 'present'
   },
@@ -17,6 +18,7 @@ export default [
     description: 'Audit remediation, automation, and project management',
     organization: 'JPMorgan Chase & Co.',
     location: 'New York, United States',
+    url: 'https://jpmorgan.com',
     from: 'March 2014',
     to: 'March 2015'
   },
@@ -27,6 +29,7 @@ export default [
     description: 'Courses: Organizational Behavior, Managerial Accounting & Finance, Global Business',
     organization: 'Mountbatten Institute (New York Program), St. Mary\'s University',
     location: 'London, United Kingdom',
+    url: 'http://www.stmarys.ac.uk/postgraduate-courses-london/mba-international-business-practice',
     from: 'March 2014',
     to: 'March 2015'
   },
@@ -37,6 +40,7 @@ export default [
     description: 'Product development, marketing, strategy, HR, and administration',
     organization: 'eerstelinks.nl',
     location: 'Amsterdam, Netherlands',
+    url: 'http://eerstelinks.nl',
     from: 'September 2013',
     to: 'present'
   },
@@ -47,6 +51,7 @@ export default [
     description: 'Courses: Microeconomics, Macroeconomics, Corporate Finance, and Econometrics',
     organization: 'Utrecht School of Economics, Utrecht University',
     location: 'Utrecht, Netherlands',
+    url: 'http://www.uu.nl/organisatie/utrecht-university-school-of-economics-use',
     from: 'September 2012',
     to: 'August 2013'
   },
@@ -57,6 +62,7 @@ export default [
     description: 'Excel modeling, web development, and online marketing',
     organization: 'SAMAN Groep',
     location: 'Zierikzee, Netherlands',
+    url: 'https://samangroep.nl',
     from: 'December 2011',
     to: 'present'
   },
@@ -67,6 +73,7 @@ export default [
     description: 'Data analysis, reporting, and IT project management',
     organization: 'Europe Container Terminals',
     location: 'Rotterdam (Maasvlakte), Netherlands',
+    url: 'http://www.ect.nl',
     from: 'March 2012',
     to: 'July 2012'
   },
@@ -77,6 +84,7 @@ export default [
     description: 'Implementation of a cross-country CRM solution',
     organization: 'Europe Container Terminals',
     location: 'Rotterdam (Maasvlakte), Netherlands',
+    url: 'http://www.ect.nl/',
     from: 'January 2012',
     to: 'March 2012'
   },
@@ -87,6 +95,7 @@ export default [
     description: 'Managing CRM database, producting marketing reports, and representation to customers',
     organization: 'Best Case Scenario',
     location: 'Sydney, Australia',
+    url: 'http://bestcasescenario.com.au/',
     from: 'March 2011',
     to: 'June 2011'
   },
@@ -97,6 +106,7 @@ export default [
     description: 'Independent academic research, SPSS analysis, and communication with clients',
     organization: 'Institute for Undergraduate Research Eleanor',
     location: 'Middelburg, Netherlands',
+    url: 'http://ucr.nl',
     from: 'January 2010',
     to: 'June 2010'
   },
@@ -107,6 +117,7 @@ export default [
     description: 'Major in Economics, minor in Statistics, and minor in Anthropology',
     organization: 'University College Roosevelt (Honors College of Utrecht University)',
     location: 'Middelburg, Netherlands',
+    url: 'http://ucr.nl',
     from: 'January 2009',
     to: 'Janurary 2012'
   }
