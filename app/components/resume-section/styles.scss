@@ -8,6 +8,10 @@
   flex-direction: row;
   position: relative;
   margin-bottom: 40px;
+  .url {
+    text-decoration: none;
+    color: #000000;
+  }
   .time {
     text-align: center;
     text-transform: uppercase;
