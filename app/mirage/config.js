@@ -1,6 +1,6 @@
 export default function() {
 
-  this.get('/resume-sections', function(db, request) {
+  this.get('/resume-sections', function(db) {
     return {
       data: db['resume-sections'].map(attrs => (
         {type: 'resume-section', id: attrs.id, attributes: attrs }))
