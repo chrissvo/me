@@ -56,10 +56,12 @@ if [ "$REPLY" = "major" ] || [ "$REPLY" = "minor" ] || [ "$REPLY" = "patch" ]; t
   # push release to GitHub
   git push origin develop master
 
+  echo
   info "Me is pushed to GitHub as version ${BLU}$new_version${RES}"
 
 fi
 
+echo
 info "Ember will start building your project rightaway..."
 
 ember build --environment=production --output-path dist/ --watch false
@@ -69,6 +71,7 @@ last_commit_hash=`git rev-parse --verify HEAD`
 last_commit_url="https://github.com/chrissvo/me/commit/$last_commit_hash"
 echo -e "{\"date\":\""$date"\", \"developer\":\""`whoami`"\", \"environment\":\""$environment"\", \"branch\":\""$deployed_branch"\", \"commit\":\""$last_commit_hash"\", \"github_url\":\""$last_commit_url"\"}" > dist/build.json
 
+echo
 read -p "Do you want to deploy to Amazon? " -r
 
 if  [ -z "$REPLY" ] || [ "$REPLY" = "no" ]; then
