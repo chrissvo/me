@@ -9,39 +9,31 @@ set -o pipefail   # don't ignore exit codes when piping output
 source scripts/functions.sh
 
 echo -e "Hello Christian\n"
-info "Ember will start building your project rightaway..."
-
-ember build --environment=production --output-path dist/ --watch false
-date=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
-deployed_branch=`git symbolic-ref --short -q HEAD`
-last_commit_hash=`git rev-parse --verify HEAD`
-last_commit_url="https://github.com/chrissvo/me/commit/$last_commit_hash"
-echo -e "{\"date\":\""$date"\", \"developer\":\""`whoami`"\", \"environment\":\""$environment"\", \"branch\":\""$deployed_branch"\", \"commit\":\""$last_commit_hash"\", \"github_url\":\""$last_commit_url"\"}" > dist/build.json
 
 current_version=`npm version | grep me | cut -f2 -d"'"`
 
 if [ -z "$current_version" ]; then
   error "Something went wrong while detecting the current version"
 else
-	echo -e "\nMe is currently on version: ${CYA}$current_version${RES}"
+  echo -e "\nMe is currently on version: ${CYA}$current_version${RES}"
 fi
 
 read -p "Do you wish to version bump? " -r
 if [ "$REPLY" = "yes" ]; then
   read -p "Your options are [major|minor|patch]: " -r
 elif [ -z "$REPLY" ] || [ "$REPLY" = "no" ]; then
-	info "We won't bump to a new version"
+  info "We won't bump to a new version"
 fi
 
 if [ "$REPLY" = "major" ] || [ "$REPLY" = "minor" ] || [ "$REPLY" = "patch" ]; then
-	new_version=`npm version $REPLY --no-git-tag-version || error "invalid version input #1"`
+  new_version=`npm version $REPLY --no-git-tag-version || error "invalid version input #1"`
 
   # remove the 'v' before version number
   new_version=${new_version:1}
 
   info "New version: $new_version"
 
-	# undo new version
+  # undo new version
   git checkout package.json
 
   # create new git flow feature branche
@@ -67,6 +59,15 @@ if [ "$REPLY" = "major" ] || [ "$REPLY" = "minor" ] || [ "$REPLY" = "patch" ]; t
   info "Me is pushed to GitHub as version ${BLU}$new_version${RES}"
 
 fi
+
+info "Ember will start building your project rightaway..."
+
+ember build --environment=production --output-path dist/ --watch false
+date=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+deployed_branch=`git symbolic-ref --short -q HEAD`
+last_commit_hash=`git rev-parse --verify HEAD`
+last_commit_url="https://github.com/chrissvo/me/commit/$last_commit_hash"
+echo -e "{\"date\":\""$date"\", \"developer\":\""`whoami`"\", \"environment\":\""$environment"\", \"branch\":\""$deployed_branch"\", \"commit\":\""$last_commit_hash"\", \"github_url\":\""$last_commit_url"\"}" > dist/build.json
 
 read -p "Do you want to deploy to Amazon? " -r
 
