@@ -1,3 +1,4 @@
+/* global ga */
 import Ember from 'ember';
 import ENV from './config/environment';
 
